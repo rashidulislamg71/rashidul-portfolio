@@ -12,6 +12,8 @@ const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const navRef = useRef();
+
 
   const handleScroll = () => {
     setScrolled(window.scrollY > 10);
@@ -28,8 +30,7 @@ const Navigation = () => {
     setIsVisible(true);
   }, []);
 
-  const navRef = useRef();
-
+ 
   const showNavbar = () => {
     navRef.current.classList.toggle(styles.responsive_nav);
     setShowMenu(!showMenu);

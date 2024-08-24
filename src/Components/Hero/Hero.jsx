@@ -30,7 +30,7 @@ const Hero = () => {
               <h1>Rashidul Islam,</h1>
 
               <p>
-                And I'm a <span>Front-end Developer!</span>
+                And I'm a <span className={styles.animation} >Front-end Developer!</span>
               </p>
 
               <small>

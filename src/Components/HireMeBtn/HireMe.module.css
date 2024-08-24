@@ -1,0 +1,29 @@
+
+
+
+.hireMeBtn {
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: tomato;
+  background: gainsboro;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 2px 2px 3px tomato;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease, transform 2.3s ease, opacity 2.3s ease;
+  transform: translateY(50px);
+  opacity: 0;
+  margin: 30px 0px 0px 0px;
+  display: block; 
+  
+}
+
+.hireMeBtn:hover {
+  box-shadow: none;
+}
+
+.serviceAnimate .hireMeBtn {
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -14,6 +14,7 @@
   transform: translateY(-100%);
   opacity: 1;
   transition: background-color 0.3s ease, transform 1s ease, opacity 1s ease;
+  z-index: 1000;
 }
 
 .nav_styles.visible{

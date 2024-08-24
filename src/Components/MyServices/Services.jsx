@@ -1,21 +1,23 @@
 /* eslint-disable no-unused-vars */
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./Services.module.css";
 import ScrollTrigger from "react-scroll-trigger";
 import { SiConvertio } from "react-icons/si";
 import { BsFillEnvelopeHeartFill } from "react-icons/bs";
 import { IoIosPaperPlane } from "react-icons/io";
 import { BsFillLayersFill } from "react-icons/bs";
-import Responsive from "../../assets/images/about img/responsive devices.png";
-import coder from "../../assets/images/about img/coding.png";
+import { MdOutlineDevicesOther } from "react-icons/md";
+
+import { SiCodersrank } from "react-icons/si";
+// import coder from "../../assets/images/about img/coding.png";
 import Modal from "../Modal/Modal";
 
 const Services = () => {
   const [visible, setVisible] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  
   const handleOpenModal = (content) => {
     setModalContent(content);
     setIsModalOpen(true);
@@ -39,10 +41,11 @@ const Services = () => {
             visible ? styles.serviceAnimate : ""
           }`}
         >
-          <div className={`${styles.box1} ${styles.singleBox}`}>
+          <div className={`${styles.box1} ${styles.singleBox} `}>
             <div className={styles.iconTitle}>
               <span>
-                <img src={coder} alt="" />
+                {/* <img src={coder} alt="" /> */}
+                <SiCodersrank />
               </span>
               <h3>Front-end Development</h3>
             </div>
@@ -71,7 +74,8 @@ const Services = () => {
               <h3>Single Page Application (SPA)</h3>
             </div>
             <p>
-            User-friendly single-page applications that provide seamless fast  navigation and dynamic content updates without full page reloads.
+              User-friendly single-page applications that provide seamless fast
+              navigation and dynamic content updates without full page reloads.
             </p>
             <button
               onClick={() =>
@@ -88,13 +92,13 @@ const Services = () => {
           <div className={`${styles.box3} ${styles.singleBox}`}>
             <div className={styles.iconTitle}>
               <span>
-                <img src={Responsive} alt="Responsive" />
+                <MdOutlineDevicesOther />
               </span>
               <h3>Pixel-Perfect Responsive Design</h3>
             </div>
             <p>
-            Design responsive layouts that ensure consistent, visually accurate layouts across all screens
-              for flawless user experience.
+              Design responsive layouts that ensure consistent, visually
+              accurate layouts across all screens for flawless user experience.
             </p>
             <button
               onClick={() =>

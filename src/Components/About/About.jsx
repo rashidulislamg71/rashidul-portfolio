@@ -8,20 +8,19 @@ import about_img_Rashidul_Islam from "../../assets/images/Rashidul islam.jpeg";
 import coding from "../../assets/images/about img/coding.png";
 import programming from "../../assets/images/about img/programming.png";
 import responsive from "../../assets/images/about img/responsive devices.png";
+import HireMe from "../HireMeBtn/HireMe";
 
 const About = () => {
   const aboutSectionRef = useRef(null);
   const imageRef = useRef(null);
   const textRef = useRef(null);
-  const hireBtnRef = useRef(null);
 
   useEffect(() => {
     const aboutSection = aboutSectionRef.current;
     const image = imageRef.current;
     const text = textRef.current;
-    const  hireBtn =  hireBtnRef.current;
   
-    if (!aboutSection || !image || !text || ! hireBtn) return;
+    if (!aboutSection || !image || !text) return;
   
     const checkPosition = () => {
       const rect = aboutSection.getBoundingClientRect();
@@ -34,11 +33,9 @@ const About = () => {
         rect.bottom >= threshold) {
         image.classList.add(styles.show);
         text.classList.add(styles.show);
-        hireBtn.classList.add(styles.show);
       } else {
         image.classList.remove(styles.show);
         text.classList.remove(styles.show);
-        hireBtn.classList.remove(styles.show);
       }
     };
   
@@ -85,7 +82,8 @@ const About = () => {
                 experiences.
               </p>
 
-              <button ref={hireBtnRef} className={styles.hireMeBtn}>Hire Me</button>
+              <HireMe />
+              
             </div>
           </div>
         </div>
