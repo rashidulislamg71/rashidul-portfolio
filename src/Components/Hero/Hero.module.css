@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+.hero_section {
+  height: 600px;
+  background: url(../../assets/images/Hero_banner/Hero_banner.png);
+  background-position: center;
+  background-size: cover;
+  background-size: cover;
+  background-blend-mode: overlay;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+.hero_text {
+  color: #fffffff6;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.greetings {
+  font-size: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+
+.addressing {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+
+.addressing h1 {
+  color: rgba(0, 255, 255, 0.856);
+  font-size: 38px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.addressing p {
+  font-size: 25px;
+}
+
+.addressing span {
+  position: relative;
+  color: rgb(255, 127, 68);
+  font-weight: bold;
+}
+
+.addressing span::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: -20px;
+  transform: translate(20%, -50%);
+  background-color: #ec366c;
+  height: 24px;
+  width: 26px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  animation: star 5s linear infinite;
+}
+
+@keyframes star {
+  0% {
+    background-color: rgb(255, 145, 0);
+  }
+  25% {
+    background-color: rgb(128, 175, 129);
+  }
+  50% {
+    background-color: rgb(80, 141, 78);
+  }
+  75% {
+    background-color: rgb(26, 83, 25);
+  }
+  100% {
+    background-color: rgb(215, 195, 241);
+  }
+}
+
+.addressing small {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.795);
+}
+
+.addressing small .read_more_btn {
+  background: #fff;
+  color: rgb(34, 44, 76);
+  padding: 2px;
+  margin-top: 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  transition: all 0.4s ease;
+}
+
+.addressing small .read_more_btn:hover {
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.849);
+}
+
+/** Hero css Social Btn start**/
+
+.hero_social_btn {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+.hero_social_btn a {
+  font-size: 25px;
+  padding: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #1ccbe2;
+  transition: all 0.3s ease;
+}
+
+.hero_social_btn a:hover {
+  box-shadow: 2px 2px 20px #1ccbe2;
+}
+
+/** Hero css Social Btn end**/
+
+.download_resumeBtn {
+  margin: 30px 0px 0px 0px;
+}
+
+.download_resumeBtn a button {
+  padding: 8px 20px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 1px;
+  transition: all 0.8s ease;
+  background-color: #ffffff;
+}
+
+.download_resumeBtn a button:hover {
+  box-shadow: 3px 3px 10px #ffffff;
+}
+
+/**Hero img css start**/
+.hero_img {
+  margin-left: 200px;
+  z-index: 0;
+  position: relative;
+}
+
+.hero_img img {
+  height: 350px;
+  width: 340px;
+  margin-top: 33px;
+  opacity: 0.9;
+  box-shadow: 0px 0px 40px rgb(5, 48, 29);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0px 20px rgba(159, 228, 176, 0.795);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 3px double teal;
+  border-width: 7px;
+}
+
+/**Hero img css end**/
+/* 
+.animation_box {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border: 2px solid rgb(54, 173, 177);
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.animation .animation_box:nth-child(1) {
+  position: absolute;
+  left: -10px;
+  top: -4px;
+  animation: animate 9s linear infinite;
+}
+.animation .animation_box:nth-child(2) {
+  position: absolute;
+  left: 200px;
+  top: 29px;
+  animation: animate 5s linear infinite;
+}
+.animation .animation_box:nth-child(3) {
+  position: absolute;
+  left: 1000px;
+  top: 44px;
+  animation: animate 7s linear infinite;
+}
+.animation .animation_box:nth-child(4) {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  animation: animate 10s linear infinite;
+}
+.animation .animation_box:nth-child(5) {
+  position: absolute;
+  left: 450px;
+  top: 100px;
+  animation: animate 6s linear infinite;
+}
+.animation .animation_box:nth-child(6) {
+  position: absolute;
+  left: 700px;
+  top: 4px;
+  animation: animate 3s linear infinite;
+}
+.animation .animation_box:nth-child(7) {
+  position: absolute;
+  left: 1043px;
+  top: 209px;
+  animation: animate 10s linear infinite;
+}
+.animation .animation_box:nth-child(8) {
+  position: absolute;
+  left: 830px;
+  top: 250px;
+  animation: animate 4s linear infinite;
+}
+.animation .animation_box:nth-child(9) {
+  position: absolute;
+  left: 30px;
+  top: 650px;
+  animation: animate 6s linear infinite;
+}
+.animation .animation_box:nth-child(10) {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  animation: animate 10s linear infinite;
+}
+.animation .animation_box:nth-child(11) {
+  position: absolute;
+  left: 190px;
+  top: 240px;
+  animation: animate 9s linear infinite;
+}
+.animation .animation_box:nth-child(12) {
+  position: absolute;
+  left: 580px;
+  top: 200px;
+  animation: animate 3s linear infinite;
+}
+.animation .animation_box:nth-child(13) {
+  position: absolute;
+  left: 900px;
+  bottom: 10px;
+  animation: animate 6s linear infinite;
+}
+.animation .animation_box:nth-child(14) {
+  position: absolute;
+  right: -10px;
+  bottom: 40px;
+  animation: animate 5s linear infinite;
+}
+.animation .animation_box:nth-child(15) {
+  position: absolute;
+  right: 50px;
+  top: 239px;
+  animation: animate 3s linear infinite;
+}
+.animation .animation_box:nth-child(16) {
+  position: absolute;
+  left: 500px;
+  bottom: 69px;
+  animation: animate 10s linear infinite;
+}
+.animation .animation_box:nth-child(17) {
+  position: absolute;
+  left: 1080px;
+  bottom: 85px;
+  animation: animate 4s linear infinite;
+} */
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5) translateY(-70px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero_section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+  }
+
+  .hero_text {
+    z-index: 1;
+  }
+
+  .greetings {
+    font-size: 22px;
+  }
+
+  .addressing {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+  }
+
+  .addressing h1 {
+    color: rgba(0, 255, 255, 0.856);
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .addressing p {
+    font-size: 22px;
+  }
+
+  .addressing small {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.61);
+  }
+
+  .hero_social_btn a {
+    z-index: 1;
+  }
+
+  .hero_img {
+    position: absolute;
+    bottom: -1px;
+    right: -180px;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  .hero_img img {
+    height: 90vh;
+    width: auto;
+  }
+}

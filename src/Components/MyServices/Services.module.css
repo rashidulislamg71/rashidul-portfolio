@@ -1,0 +1,144 @@
+
+
+
+/*  "Roboto Condensed"; */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* "Inter Tight" */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.servives_section {
+  padding: 60px 100px;
+  text-align: center;
+  text-align: center;
+  position: relative;
+}
+.servives_section > p {
+  border-bottom: 1px solid gray;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.servives_section h2{
+  margin: 5px 0px 60px 0px;
+
+}
+p{
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 400;
+}
+ h2 , h3{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+}
+
+.serviceBoxes {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.serviceAnimate {
+
+}
+
+.singleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 360px;
+  height: 210px;
+  /* border: 1px solid; */
+  padding: 15px;
+  box-shadow: 2px 2px 15px ;
+  border-radius: 2px;
+}
+
+.box1,
+.box2,
+.box3 .iconTitle > span ,
+.box4,
+.box5 .iconTitle > span ,
+.box6 {
+}
+.box5 .iconTitle > span {
+  font-size: 42px;
+}
+
+
+.iconTitle {
+}
+
+.iconTitle > span {
+  font-size: 50px;
+  height: 50px;
+  width: 100px;
+  border: 1px solid rgb(35, 116, 116);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 4px 0px;
+  /* border-radius: 10px 0px 0px; */
+  box-shadow: 3px 3px 2px rgb(35, 116, 116);
+  margin-bottom: 6px;
+  filter: drop-shadow(1px 1px 2px rgb(208, 230, 230));
+  
+}
+.iconTitle > span img{
+  height: 50px;
+  width: 50px;
+  padding: 4px 0px;
+}
+
+.iconTitle h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.iconTitle p {
+
+}
+.iconTitle button {
+}
+
+.whyHireMeBtn button {
+  padding: 8px 15px;
+  font-size: 17px;
+  font-weight: 700;
+  background: tomato;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  margin: 30px 0px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-in-out; /* Smooth transition */
+}
+
+.whyHireMeBtn button:hover {
+  box-shadow: 0px 0px 15px tomato; /* Apply shadow on hover */
+}
+
+/* Optional: Animation if needed for continuous effect */
+@keyframes box-shadow-animation {
+  0% {
+    box-shadow: 0px 0px 5px tomato;
+  }
+  50% {
+    box-shadow: 0px 0px 15px tomato;
+  }
+  100% {
+    box-shadow: 0px 0px 5px tomato;
+  }
+}
+
+.whyHireMeBtn button {
+  animation: box-shadow-animation 1s ease-in-out infinite; 
+}
+

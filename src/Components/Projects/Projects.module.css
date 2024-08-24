@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.projects_section {
+  padding: 60px 80px ;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.836);
+  background-color: rgb(31, 44, 44);
+  border-top: 2px solid rgba(202, 224, 231, 0.822);
+} 
+
+.title{
+    text-align: center;
+    background-color: rgba(5, 5, 5, 0.548);
+    font-size: 25px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px rgba(115, 179, 179, 0.411);
+}
+
+.projects_content {
+
+}
+
+.my_projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+
+.projects_app {
+
+}
+
+.todo_app {
+    position: relative;
+    background-color: rgb(3, 25, 44);
+    transition: all .5s ease;
+    box-shadow: 2px 2px 20px rgb(81, 204, 204);
+}
+
+/* .todo_app::before{
+    content: "";
+    position: absolute;
+    left: -3px;
+    bottom: -3px;
+    width: 0%;
+    height: 0%;
+    border-bottom: 4px solid transparent;
+    border-left:  4px solid transparent;
+    animation: border_animation 5s linear infinite;
+}
+.todo_app::after{
+    content: "";
+    position: absolute;
+    right:-3px;
+    top:-3px;
+    width: 0%;
+    height: 0%;
+    border-right: 4px solid transparent;
+    border-top:  4px solid transparent;
+    animation: border_animation 5s linear infinite;
+    
+} */
+
+.todo_app:hover{
+  box-shadow: 2px 2px 20px rgb(21, 112, 139);
+}
+
+
+/* @keyframes border_animation {
+  0% {
+    border-color: rgb(27, 180, 190);
+    border-radius: 1px;
+    width: 0%;
+    height: 0%;
+  }
+  50% {
+    border-color: rgb(164, 38, 223);
+    border-radius: 1px;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    border-color: rgb(27, 180, 190);
+    border-radius: 1px;
+    width: 0%;
+    height: 0%;
+  }
+} */
+
+.app_box {
+  padding: 10px;
+}
+
+.todo_image {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+
+.todo_image img {
+  height: 130px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app_features {
+    
+}
+
+.app_features h4 {
+  font-size: 20px;
+}
+
+.app_features li {
+
+}
+
+.app_features .features_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-size: 13px;
+}
+
+.live_and_github_link {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  font-size: 20px;
+}
+.live_and_github_link a {
+  color: rgb(10, 170, 130);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .projects_section {
+    padding: 40px 15px ;
+  } 
+
+  .my_projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 40px;
+  }
+
+  .todo_app {
+    width: 350px;
+}
+}
+
+
