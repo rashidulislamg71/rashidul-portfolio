@@ -87,6 +87,18 @@ const Navigation = () => {
           </Link>
 
           <Link
+            to="service_section"
+            spy={true}
+            smooth={true}
+            offset={-74}
+            duration={400}
+            delay={0.8}
+            onClick={closeMenu}
+          >
+            Services
+          </Link>
+
+          <Link
             to="projects_section"
             spy={true}
             smooth={true}

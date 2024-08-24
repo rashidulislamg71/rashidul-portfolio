@@ -28,7 +28,7 @@ const Services = () => {
   };
 
   return (
-    <div className={styles.servives_section}>
+    <div id="service_section" className={styles.servives_section}>
       <p>Explore my</p>
       <h2>SERVICES</h2>
 

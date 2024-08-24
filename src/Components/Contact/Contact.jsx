@@ -1,11 +1,14 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-unused-vars */
 import styles from "./Contact.module.css";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
+
 import { FaXTwitter } from "react-icons/fa6";
 import { ImFacebook2 } from "react-icons/im";
 import { FaWhatsappSquare } from "react-icons/fa";
+import contact from "..//../assets/images/contact/contact_me2.png";
 
 import { MdMarkEmailUnread } from "react-icons/md";
 import { FaSquarePhone } from "react-icons/fa6";
@@ -16,79 +19,98 @@ import { MdContactless } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div className={styles.contact_section}>
-      <h2 className={styles.title}>Contact Me</h2>
-      <div className={styles.contact_info}>
-        <div className={styles.social}>
-          <div className={styles.title}>
-            <sapn>
-              <IoShareSocialSharp />
-            </sapn>
-            <h3>Social -</h3>
-          </div>
+    <>
+      <div className={styles.contact_section}>
+        <div className={styles.contact_bg}>
+          <h2>CONTACT</h2>
 
-          <div className={styles.socialIcons}>
-            <a target="_blank" title="Linkedin"  href="https://www.linkedin.com/in/rashidulislam71/" title="Linkedin" className={styles.linkedin}>
-              <FaLinkedin />
-            </a>
-            <a target="_blank" title="Facebook" href="https://web.facebook.com/rashidulislam72/" className={styles.facebook}>
-              <ImFacebook2 />
-            </a>
+          <div className={` ${styles.flex} ${styles.contact_ways}`}>
+            <div className={`${styles.flex} ${styles.contact_left} `}>
+              <div className={` ${styles.contact_greetings}`}>
+                <h3>Welcome Back in Contact!</h3>
+                <p>
+                  I am very excited to talk to you. <br />
+                  Feel Free to say. I am waiting for you.{" "}
+                </p>
+              </div>
+              <div className={`${styles.flex} ${styles.left_bottom}`}>
+                <div className={`${styles.flex} ${styles.contact_icon}`}>
+                 <span> <FaSquarePhone /></span>
+               <span> <FaLinkedin /></span>
+                 <span> <FaSquareGithub /></span>
+                </div>
+                <div className={`${styles.flex} ${styles.contact_way}`}>
+                  <b>01782-242671</b>
+                  <b>Linkedin</b>
+                  <b>GitHub</b>
+                </div>
+              </div>
+            </div>
+            <div className={styles.contact_right}>
+              <form className={styles.contact_form}>
+                <div className={styles.form_group}>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    required
+                    placeholder="Full Name"
+                  />
+                </div>
 
-            <a target="_blank" href="https://github.com/rashidulislamg71" title="Github" className={styles.github}>
-              <FaSquareGithub />
-            </a>
+                <div className={styles.form_group}>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    placeholder="Phone Number"
+                  />
+                </div>
 
-            {/* <a href="#" title="Twitter" className={styles.twittr}>
-              <FaXTwitter />
-            </a>
+                <div className={styles.form_group}>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Email"
+                  />
+                </div>
 
-            <a href="#" title="WhatsApp" className={styles.whatsApp}>
-              <FaWhatsappSquare />
-            </a> */}
+                <div className={styles.form_group}>
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    required
+                    placeholder="Address"
+                  />
+                </div>
+
+                <div className={styles.form_group}>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+
+                <button type="submit" className={styles.submit_btn}>
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
 
-        <div className={styles.emailAndPhone}>
-          <div className={styles.title}>
-            <sapn>
-              <MdContactless />
-            </sapn>
-            <h3>Email or Phone -</h3>
-          </div>
-          <div className={styles.link}>
-            <a href="mailto:jrashidulislam0103@gmail.com?subject=Subject%20Line&body=This%20is%20the%20body%20text">
-              <span className={styles.email}>
-                <MdMarkEmailUnread />
-              </span>
-              jrashidulislam0103@gmail.com
-            </a>
-            <br />
-            <a href="tel:+880 1782-241671">
-              <span className={styles.phone}>
-                <FaSquarePhone />
-              </span>
-              +880 1782-241671 
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.address}>
-          <div className={styles.title}>
-            <sapn>
-              {" "}
-              <MdAddLocationAlt />{" "}
-            </sapn>
-            <h3>Address -</h3>
-          </div>
-
-          <div className={styles.address_info}>
-            Sirajganj <br />
-            Rajshahi, Dhaka
-          </div>
+        <div className={styles.address_info}>
+          Sirajganj Rajshahi, <br /> Dhaka, Bangladesh
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
