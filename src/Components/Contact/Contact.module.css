@@ -1,11 +1,20 @@
 
 
+
+/*  "Roboto Condensed"; */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* "Inter Tight" */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .contact_section {
   font-family: sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Roboto Condensed", sans-serif;
   
 }
 
@@ -44,10 +53,22 @@
   margin: 0px 0px 0px 0px;
 }
 .contact_greetings h3{
-  color: tomato;
-  font-size: 30px;
+  color: rgb(152, 201, 17);
+  font-size: 28px;
+  text-transform: uppercase;
+  text-shadow: 5px 10px 5px rgb(29, 27, 27);
 }
-.contact_greetings p{}
+.contact_greetings p{
+  line-height: 30px;
+  margin: 15px 0px 0px 0px;
+  font-size: 18px;
+  text-shadow: 2px 5px 5px rgb(29, 27, 27);
+  color: #ffffffe5;
+}
+.contact_greetings p span{
+  color: rgb(36, 205, 255);
+  font-size: 22px;
+}
 
 
 .left_bottom{
@@ -56,8 +77,8 @@
 
 .contact_icon{
   background: teal;
-  height: 118px;
-  padding: 5px;
+  /* height: 118px; */
+  padding: 10px 5px;
   border-radius: 3px;
   flex-direction: column;
   box-shadow: 3px 3px 3px rgba(11, 32, 32, 0.801);
@@ -67,6 +88,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.contact_icon span:last-child{
+  font-size: 21px;
 }
 
 .contact_way{
@@ -74,8 +99,14 @@
   align-items: start;
   cursor: pointer;
   gap: 15px;
-  font-size: 15px;
+  font-size: 16px;
+  transition: all .3s ease-in-out;
   text-shadow: 8px 5px 5px rgba(0, 0, 0, 0.671);
+
+}
+
+.contact_way b:hover{
+  color: rgb(20, 199, 199);
 }
 
 /*email form*/
@@ -100,14 +131,19 @@ padding: 15px 0px;
 .form_group{}
 input[type="text"],
 input[type="email"],
-input[type="tel"]{
+input[type="tel"],
+#message
+{
   width: 300px;
   padding: 5px 10px;
-  background:#ffffffec;
+  background:#ffffffc7;
   border: none;
   outline: none;
   color: black;
+  border-radius: 2px;
+
 }
+
 
 
 .contact_form {
@@ -115,6 +151,25 @@ input[type="tel"]{
 
 .form_group {
   margin: 20px 0px 0px 0px;
+}
+
+.submit_btn{
+  padding: 5px ;
+  width: 100%;
+  font-size: 17px;
+  color: #fff;
+  background: rgba(4, 105, 105, 0.699);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: 3px 3px 2px rgb(4, 54, 54);
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.submit_btn:hover{
+  box-shadow: none;
 }
 
 
