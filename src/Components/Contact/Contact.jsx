@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { ImFacebook2 } from "react-icons/im";
 import { FaWhatsappSquare } from "react-icons/fa";
-import contact from "..//../assets/images/contact/contact_me2.png";
+import contact from "../../assets/images/contact/contact_me2.png";
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 
