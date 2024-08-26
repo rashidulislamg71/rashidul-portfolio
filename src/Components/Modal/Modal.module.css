@@ -7,13 +7,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.705);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 200;
   }
   
   .modalOverlay.open {
@@ -35,6 +36,8 @@
     text-align: left;
     transition: transform 0.3s ease;
     transform: scale(0.9);
+    border-top: 20px solid rgb(0, 0, 0);
+    
   }
   
   .modalContent.open {

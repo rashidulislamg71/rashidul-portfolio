@@ -44,6 +44,10 @@
   color: rgb(6, 163, 140);
 }
 
+.active{
+  color: rgb(241, 87, 39);
+}
+
 .logo{
   width: 150px;
   text-align: center;

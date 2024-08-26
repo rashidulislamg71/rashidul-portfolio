@@ -1,33 +1,35 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useRef } from "react";
-import { Link } from "react-scroll";
+import { Link, scrollSpy } from "react-scroll";
 import styles from "./Navigation.module.css";
 import portfolio_logo from ".//../../../public/Rashidul_logo.png";
 import { FiX } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useLocation } from "react-router-dom";
 
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
   const navRef = useRef();
 
 
   const handleScroll = () => {
     setScrolled(window.scrollY > 10);
   };
+  
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   useEffect(() => {
     setIsVisible(true);
+    window.addEventListener("scroll", handleScroll);
+    scrollSpy.update();
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
  
@@ -38,6 +40,7 @@ const Navigation = () => {
 
   const closeMenu = () => {
     setShowMenu(false);
+    navRef.current.classList.remove(styles.responsive_nav);
   };
 
   return (
@@ -55,9 +58,9 @@ const Navigation = () => {
             offset={-100}
             duration={400}
             delay={0.8}
+            onSetActive={() => setActiveLink("hero_section")} // Track active link
+            className={activeLink === "hero_section" ? styles.active : ""}
           >
-            {/* <h3>Rashidul</h3>
-            <h4>Islam</h4> */}
             <img src={portfolio_logo} alt="" />
           </Link>
         </div>
@@ -70,6 +73,8 @@ const Navigation = () => {
             duration={400}
             delay={0.8}
             onClick={closeMenu}
+            onSetActive={() => setActiveLink("hero_section")} // Track active link
+            className={activeLink === "hero_section" ? styles.active : ""}
           >
             Home
           </Link>
@@ -82,6 +87,8 @@ const Navigation = () => {
             duration={400}
             delay={0.8}
             onClick={closeMenu}
+            onSetActive={() => setActiveLink("about_section")} // Track active link
+            className={activeLink === "about_section" ? styles.active : ""}
           >
             About
           </Link>
@@ -94,6 +101,8 @@ const Navigation = () => {
             duration={400}
             delay={0.8}
             onClick={closeMenu}
+            onSetActive={() => setActiveLink("service_section")} // Track active link
+            className={activeLink === "service_section" ? styles.active : ""}
           >
             Services
           </Link>
@@ -106,6 +115,8 @@ const Navigation = () => {
             duration={400}
             delay={0.8}
             onClick={closeMenu}
+            onSetActive={() => setActiveLink("projects_section")} // Track active link
+            className={activeLink === "projects_section" ? styles.active : ""}
           >
             Projects
           </Link>
@@ -118,6 +129,8 @@ const Navigation = () => {
             duration={400}
             delay={0.8}
             onClick={closeMenu}
+            onSetActive={() => setActiveLink("skills_section")} // Track active link
+            className={activeLink === "skills_section" ? styles.active : ""}
           >
             Skills
           </Link>
@@ -130,6 +143,8 @@ const Navigation = () => {
             duration={400}
             delay={0.8}
             onClick={closeMenu}
+            onSetActive={() => setActiveLink("contact_section")} // Track active link
+            className={activeLink === "contact_section" ? styles.active : ""}
           >
             Contact me
           </Link>
@@ -153,3 +168,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+

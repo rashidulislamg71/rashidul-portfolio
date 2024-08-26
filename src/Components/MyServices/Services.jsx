@@ -12,11 +12,14 @@ import { MdOutlineDevicesOther } from "react-icons/md";
 import { SiCodersrank } from "react-icons/si";
 // import coder from "../../assets/images/about img/coding.png";
 import Modal from "../Modal/Modal";
+import WhyHireMe from "../WhyHireMe/WhyHireMe";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [visible, setVisible] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+ 
   
   const handleOpenModal = (content) => {
     setModalContent(content);
@@ -188,8 +191,11 @@ const Services = () => {
       </ScrollTrigger>
 
       <div className={styles.whyHireMeBtn}>
-        <button title="See work style!">Why Hire me?</button>
+        <Link to="/WhyHireMe">
+          Why Hire me?
+        </Link>
       </div>
+
 
       <Modal
         isOpen={isModalOpen}

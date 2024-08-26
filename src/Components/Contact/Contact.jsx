@@ -85,7 +85,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className={styles.contact_section}>
+      <div id="contact_section" className={styles.contact_section}>
         <div className={styles.contact_bg}>
           <h2>CONTACT</h2>
           <div className={` ${styles.flex} ${styles.contact_ways}`}>
