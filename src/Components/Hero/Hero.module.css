@@ -14,12 +14,23 @@
   justify-content: center;
   align-items: center;
   padding: 80px;
+  
 }
 
 .hero_text {
   color: #fffffff6;
   max-width: 600px;
   z-index: 1;
+  margin-top: 20px;
+  /* transform: translateY(20px); */
+  opacity: 0;
+  transition:  opacity 8s ease;
+}
+
+/*animatin styles*/
+.animated{
+  /* transform: translateY(0px); */
+  opacity: 1;
 }
 
 .greetings {
@@ -31,6 +42,7 @@
 .addressing {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
+
 }
 
 .addressing h1 {
@@ -43,6 +55,7 @@
 
 .addressing p {
   font-size: 25px;
+  position: relative;
 }
 
 .addressing span {
@@ -51,45 +64,24 @@
   font-weight: bold;
 }
 
-.addressing span::after {
-  content: "";
+.addressing .stars_animation{
+  color: #fff;
   position: absolute;
-  top: 15%;
-  right: -20px;
-  transform: translate(20%, -50%);
-  background-color: #ec366c;
-  height: 24px;
-  width: 26px;
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
-  animation: star 5s linear infinite;
+  top: -15px;
+  animation: beep 3s linear infinite;
 }
 
-@keyframes star {
+@keyframes beep {
   0% {
-    background-color: rgb(255, 145, 0);
+    color: none;
   }
-  25% {
-    background-color: rgb(128, 175, 129);
-  }
-  50% {
-    background-color: rgb(80, 141, 78);
-  }
-  75% {
-    background-color: rgb(26, 83, 25);
-  }
+50%{
+  color: rgb(3, 18, 18);
+  filter: drop-shadow(0px 0px 3px rgb(3, 18, 18));
+}
   100% {
-    background-color: rgb(215, 195, 241);
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 5px rgb(228, 207, 207));
   }
 }
 
@@ -120,6 +112,14 @@
   margin-top: 20px;
   display: flex;
   gap: 30px;
+  transform:  translateX(-300px);
+  opacity: 0;
+  transition: transform 2s ease, opacity 2s ease;
+}
+
+.socialBtn_animated{
+  transform:  translateX(0px);
+  opacity: 1;
 }
 .hero_social_btn a {
   font-size: 25px;
@@ -140,6 +140,14 @@
 
 .download_resumeBtn {
   margin: 30px 0px 0px 0px;
+  transform:  translateY(30px);
+  opacity: 0;
+  transition: transform 2s ease, opacity 2s ease;
+}
+
+.resumeBtn_animated{
+  transform:  translateY(0px);
+  opacity: 1;
 }
 
 .download_resumeBtn a button {

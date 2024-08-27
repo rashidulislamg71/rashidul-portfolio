@@ -1,7 +1,7 @@
+/* eslint-disable no-unused-vars */
 
 
 import { Outlet, ScrollRestoration } from 'react-router-dom';
-
 
 const App = () => {
   return (

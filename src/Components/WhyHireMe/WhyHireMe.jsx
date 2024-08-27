@@ -6,7 +6,7 @@ import whyHireMeImage from "../../assets/images/Why_Hire/why.png";
 import HireMe from "../HireMeBtn/HireMe";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import { useState } from "react";
+import { useState} from "react";
 import ScrollTrigger from "react-scroll-trigger";
 
 const WhyHireMe = () => {

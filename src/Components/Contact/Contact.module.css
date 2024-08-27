@@ -1,12 +1,8 @@
-
-
-
 /*  "Roboto Condensed"; */
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* "Inter Tight" */
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 .contact_section {
   font-family: sans-serif;
@@ -15,10 +11,9 @@
   flex-direction: column;
   justify-content: center;
   font-family: "Roboto Condensed", sans-serif;
-  
 }
 
-.flex{
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,56 +21,54 @@
 }
 
 .contact_bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(10, 9, 9, 0.5)), url('../../assets/images/contact/ContactMe.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(10, 9, 9, 0.5)),
+    url("../../assets/images/contact/ContactMe.png");
   background-position: center;
   background-size: cover;
   padding: 100px 0px;
 }
 
-.contact_bg h2{
+.contact_bg h2 {
   text-align: center;
   margin: -50px 0px 0px;
 }
 
-.contact_ways{
+.contact_ways {
   margin: 120px 0px 0px 0px;
   justify-content: space-evenly;
 }
 
-.contact_left{
+.contact_left {
   flex-direction: column;
   align-items: start;
   gap: 40px;
-  
 }
 
-.contact_greetings{
+.contact_greetings {
   margin: 0px 0px 0px 0px;
 }
-.contact_greetings h3{
+.contact_greetings h3 {
   color: rgb(152, 201, 17);
   font-size: 28px;
   text-transform: uppercase;
   text-shadow: 5px 10px 5px rgb(29, 27, 27);
 }
-.contact_greetings p{
+.contact_greetings p {
   line-height: 30px;
   margin: 15px 0px 0px 0px;
   font-size: 18px;
   text-shadow: 2px 5px 5px rgb(29, 27, 27);
   color: #ffffffe5;
 }
-.contact_greetings p span{
+.contact_greetings p span {
   color: rgb(36, 205, 255);
   font-size: 22px;
 }
 
-
-.left_bottom{
-
+.left_bottom {
 }
 
-.contact_icon{
+.contact_icon {
   background: teal;
   /* height: 118px; */
   padding: 10px 5px;
@@ -83,68 +76,63 @@
   flex-direction: column;
   box-shadow: 3px 3px 3px rgba(11, 32, 32, 0.801);
 }
-.contact_icon span{
+.contact_icon span {
   font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.contact_icon span:last-child{
+.contact_icon span:last-child {
   font-size: 21px;
 }
 
-.contact_way{
+.contact_way {
   flex-direction: column;
   align-items: start;
   cursor: pointer;
   gap: 15px;
   font-size: 16px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-shadow: 8px 5px 5px rgba(0, 0, 0, 0.671);
-
 }
 
-.contact_way b:hover{
+.contact_way b:hover {
   color: rgb(20, 199, 199);
 }
 
 /*email form*/
 
-.contact_right{
+.contact_right {
   width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid;
   background: rgba(255, 255, 255, 0.03);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.1px);
--webkit-backdrop-filter: blur(2.1px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-padding: 15px 0px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px 0px;
 }
-.contact_form{
-
+.contact_form {
 }
-.form_group{}
+.form_group {
+}
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-#message
-{
+#message {
   width: 300px;
   padding: 5px 10px;
-  background:#ffffffc7;
+  background: #ffffffc7;
   border: none;
   outline: none;
   color: black;
   border-radius: 2px;
-
 }
-
-
 
 .contact_form {
 }
@@ -153,8 +141,8 @@ input[type="tel"],
   margin: 20px 0px 0px 0px;
 }
 
-.submit_btn{
-  padding: 5px ;
+.submit_btn {
+  padding: 5px;
   width: 100%;
   font-size: 17px;
   color: #fff;
@@ -165,26 +153,21 @@ input[type="tel"],
   box-shadow: 3px 3px 2px rgb(4, 54, 54);
   margin-top: 30px;
   cursor: pointer;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
-.submit_btn:hover{
+.submit_btn:hover {
   box-shadow: none;
 }
-
-
-
-
 
 @media screen and (max-width: 1024px) {
   .contact_section {
     padding: 30px 15px;
   }
 
-  h2.title{
+  h2.title {
     margin-bottom: 50px;
   }
-  
 
   .contact_info {
     display: flex;
@@ -192,5 +175,4 @@ input[type="tel"],
     gap: 40px;
     flex-wrap: wrap;
   }
-
 }

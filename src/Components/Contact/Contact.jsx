@@ -8,7 +8,7 @@ import { ImFacebook2 } from "react-icons/im";
 import { FaWhatsappSquare } from "react-icons/fa";
 import contact from "../../assets/images/contact/contact_me2.png";
 import { useState, useRef } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
@@ -61,26 +61,27 @@ const Contact = () => {
       return;
     }
 
-    emailjs.sendForm(
-      "service_95qtmfk",
-      "template_bpv24su",
-      form.current,
-      "7xg82TxmrYm_fyH-6"
-    )
-    .then((response) => {
-      setResponseMessage("ইমেইল সফলভাবে পাঠানো হয়েছে!");
-      setFormData({
-        fullName: "",
-        phone: "",
-        email: "",
-        address: "",
-        message: "",
+    emailjs
+      .sendForm(
+        "service_95qtmfk",
+        "template_bpv24su",
+        form.current,
+        "7xg82TxmrYm_fyH-6"
+      )
+      .then((response) => {
+        setResponseMessage("ইমেইল সফলভাবে পাঠানো হয়েছে!");
+        setFormData({
+          fullName: "",
+          phone: "",
+          email: "",
+          address: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        setResponseMessage("ইমেইল পাঠাতে ব্যর্থ হয়েছে।");
+        console.error("Error:", error);
       });
-    })
-    .catch((error) => {
-      setResponseMessage("ইমেইল পাঠাতে ব্যর্থ হয়েছে।");
-      console.error("Error:", error);
-    });
   };
 
   return (
@@ -103,10 +104,18 @@ const Contact = () => {
               </div>
               <div className={`${styles.flex} ${styles.left_bottom}`}>
                 <div className={`${styles.flex} ${styles.contact_icon}`}>
-                  <span><FaWhatsappSquare /></span>
-                  <span><FaSquareGithub /></span>
-                  <span><FaLinkedin /></span>
-                  <span><ImFacebook2 /></span>
+                  <span>
+                    <FaWhatsappSquare />
+                  </span>
+                  <span>
+                    <FaSquareGithub />
+                  </span>
+                  <span>
+                    <FaLinkedin />
+                  </span>
+                  <span>
+                    <ImFacebook2 />
+                  </span>
                 </div>
                 <div className={`${styles.flex} ${styles.contact_way}`}>
                   <b>01782-242671</b>
@@ -117,7 +126,11 @@ const Contact = () => {
               </div>
             </div>
             <div className={styles.contact_right}>
-              <form ref={form} className={styles.contact_form} onSubmit={handleSubmit}>
+              <form
+                ref={form}
+                className={styles.contact_form}
+                onSubmit={handleSubmit}
+              >
                 <div className={styles.form_group}>
                   <input
                     type="text"

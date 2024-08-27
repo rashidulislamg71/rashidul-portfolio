@@ -11,9 +11,9 @@ import { ScrollRestoration } from "react-router-dom";
 function Portfolio() {
   return (
     <>
-      <ScrollRestoration />
       <div className={styles.portfolio}>
         <section id="navigation_section">
+          <ScrollRestoration />
           <Navigation />
         </section>
 
