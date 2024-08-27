@@ -16,14 +16,16 @@ import { Link } from "react-scroll";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { ImFacebook2 } from "react-icons/im";
+import ScrollTrigger from "react-scroll-trigger";
 
 const Hero = () => {
-
+  const [visible, setVisible] = useState(false)
 
   return (
 
       <div className={styles.hero_section}>
         <div>
+          <ScrollTrigger onEnter={()=>setVisible(true)} onExit={()=>setVisible(false)}>
           <div className={styles.hero_text}>
             <div className={styles.greetings}>Hello, It's Me !</div>
             <div className={styles.addressing}>
@@ -69,6 +71,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
+          </ScrollTrigger>
+         
           <div className={styles.download_resumeBtn}>
             <a
               href="https://drive.google.com/file/d/1N2q28n1klhV8A1dJkLw9gsWUqf251wP9/view?usp=sharing"

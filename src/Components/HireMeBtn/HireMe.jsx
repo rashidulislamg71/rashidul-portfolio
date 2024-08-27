@@ -20,6 +20,7 @@ const HireMe = () => {
          spy={true}
          smooth={true}
          offset={-70}
+         duration={400}
          delay={0.8}>
           {/* onSetActive={() => setActiveLink("hero_section")} // Track active link
          className={activeLink === "hero_section" ? styles.active : ""}> */}

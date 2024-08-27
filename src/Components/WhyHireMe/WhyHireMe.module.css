@@ -11,33 +11,40 @@ body {
     font-family: "Roboto Condensed", sans-serif;
 }
 
-.whyHireMe {}
+
 
 .banner {
     background: linear-gradient(rgba(5, 5, 5, 0.363), rgba(20, 20, 20, 0.384)), url(../../assets/images/Why_Hire/1111.png);
     background-position: center;
     background-size: cover;
-    padding: 100px;
+    padding: 100px 20px;
     color: #fff;
     text-align: center;
 }
+.banner_content{
+    transform: translateY(0px);
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-.banner h2 {
+.animated{
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.banner .banner_content h2 {
     font-size: 30px;
     color: tomato;
     text-transform: uppercase;
 }
 
-.banner p {
+.banner_content p {
     margin: 15px 0;
+    color: #ffffffcb;
 }
 
-.hireMeBtn {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
@@ -46,8 +53,8 @@ body {
     margin: 0 auto;
 }
 
-.BackHomeBtn {
-    margin: 20px 0px 0px 100px;
+a .BackHomeBtn {
+    margin: 20px 0px 0px 0px;
     padding: 3px 10px;
     border: none;
     background: ghostwhite;
@@ -56,9 +63,14 @@ body {
     box-shadow: 2px 2px 10px;
     cursor: pointer;
     transition: all .4s ease;
+    
+}
+ a .BackHomeBtn:hover{
+    box-shadow: none;
 }
 
 .innerContent img {
+    
     height: 350px;
     width: 500px;
     margin: 0 auto;
@@ -67,6 +79,19 @@ body {
     align-items: center;
     border-bottom: 3px solid rgba(83, 81, 81, 0.829);
     margin-bottom: 30px;
+    animation: updown 5s linear infinite;
+    transition: transform  ease-in-out ;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+@keyframes updown {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(10px);
+    }
 }
 
 .content {
@@ -87,3 +112,5 @@ body {
 .content p {
     color: #3d3b3b;
 }
+
+
