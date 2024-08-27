@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ScrollTrigger from "react-scroll-trigger";
 import styles from "./HireMe.module.css";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const HireMe = () => {
   const [visible, setVisible] = useState(false);
@@ -16,16 +16,14 @@ const HireMe = () => {
           visible ? styles.serviceAnimate : ""
         }`}
       >
-        <Link to="contact_section"
+        {/* <Link to="contact_section"
          spy={true}
          smooth={true}
          offset={-70}
          duration={400}
-         delay={0.8}>
-          {/* onSetActive={() => setActiveLink("hero_section")} // Track active link
-         className={activeLink === "hero_section" ? styles.active : ""}> */}
+         delay={0.8}> */}
         <button className={styles.hireMeBtn}>Hire Me</button>
-        </Link>
+        {/* </Link> */}
       </div>
     </ScrollTrigger>
   );
