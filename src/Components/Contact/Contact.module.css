@@ -44,9 +44,6 @@
   gap: 40px;
 }
 
-.contact_greetings {
-  margin: 0px 0px 0px 0px;
-}
 .contact_greetings h3 {
   color: rgb(152, 201, 17);
   font-size: 28px;
@@ -54,9 +51,9 @@
   text-shadow: 5px 10px 5px rgb(29, 27, 27);
 }
 .contact_greetings p {
-  line-height: 30px;
+  line-height: 25px;
   margin: 15px 0px 0px 0px;
-  font-size: 18px;
+  font-size: 15px;
   text-shadow: 2px 5px 5px rgb(29, 27, 27);
   color: #ffffffe5;
 }
@@ -160,19 +157,36 @@ input[type="tel"],
   box-shadow: none;
 }
 
-@media screen and (max-width: 1024px) {
-  .contact_section {
-    padding: 30px 15px;
+@media screen and (max-width: 834px) {
+  .contact_bg {
+    padding: 100px 0px;
   }
 
-  h2.title {
-    margin-bottom: 50px;
+  .contact_bg h2 {
+    margin: -50px 0px 0px;
   }
 
-  .contact_info {
-    display: flex;
-    padding-left: 30px;
-    gap: 40px;
+  .contact_ways {
+    margin: 40px 0px 0px 0px;
     flex-wrap: wrap;
+    gap: 50px;
+  }
+  .contact_right {
+    width: 100%;
+    border-radius: 1px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact_bg {
+    padding: 50px 20px;
+  }
+
+  .contact_bg h2 {
+    margin: -0px 0px 0px;
+  }
+
+  .contact_greetings h3 {
+    font-size: 20px;
   }
 }

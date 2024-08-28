@@ -198,3 +198,36 @@ p{
     background: linear-gradient(45deg, rgba(11,8,232,1), rgba(172,60,124,1), rgba(119,4,149,1), rgba(36,216,221,1));
   }
 }
+
+
+@media screen and (max-width:1024px) {
+  .servives_section {
+    padding: 60px 30px;
+  
+  }
+  .serviceBoxes {
+    margin: 60px  0px 40px 0px;
+    gap: 30px;
+ 
+  }
+ 
+}
+
+
+@media screen and (max-width:480px) {
+  .servives_section {
+    padding: 50px 20px;
+  
+  }
+  .serviceBoxes {
+    margin: 50px  0px 40px 0px;
+ 
+  }
+
+  .singleBox {
+    width: 100%;
+    padding: 15px;
+  
+  }
+  
+}

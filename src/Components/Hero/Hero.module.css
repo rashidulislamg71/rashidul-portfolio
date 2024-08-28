@@ -111,7 +111,7 @@
 .hero_social_btn {
   margin-top: 20px;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   transform:  translateX(-300px);
   opacity: 0;
   transition: transform 2s ease, opacity 2s ease;
@@ -167,29 +167,6 @@
 .download_resumeBtn a button:hover {
   box-shadow: 3px 3px 10px #ffffff;
 }
-
-/**Hero img css start**/
-.hero_img {
-  margin-left: 200px;
-  z-index: 0;
-  position: relative;
-}
-
-.hero_img img {
-  height: 350px;
-  width: 340px;
-  margin-top: 33px;
-  opacity: 0.9;
-  box-shadow: 0px 0px 40px rgb(5, 48, 29);
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  box-shadow: 0 0px 20px rgba(159, 228, 176, 0.795);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 3px double teal;
-  border-width: 7px;
-}
-
 
 @keyframes animate {
   0% {
