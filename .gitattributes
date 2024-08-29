@@ -1,3 +1,8 @@
+# সমস্ত ফাইলের জন্য লাইন এন্ডিং নিয়ন্ত্রণ (LF সেট করা হবে)
 * text=auto
-*.jsx text
-*.css text
+
+# .js, .jsx, .css, এবং .html ফাইলগুলোতে LF লাইন এন্ডিং প্রয়োগ করুন
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
