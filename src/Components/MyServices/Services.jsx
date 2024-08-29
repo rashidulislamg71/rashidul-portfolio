@@ -10,9 +10,7 @@ import { BsFillLayersFill } from "react-icons/bs";
 import { MdOutlineDevicesOther } from "react-icons/md";
 
 import { SiCodersrank } from "react-icons/si";
-// import coder from "../../assets/images/about img/coding.png";
 import Modal from "../Modal/Modal";
-import WhyHireMe from "../WhyHireMe/WhyHireMe";
 import { Link } from "react-router-dom";
 
 const Services = () => {

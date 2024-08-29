@@ -62,8 +62,6 @@
   font-size: 22px;
 }
 
-.left_bottom {
-}
 
 .contact_icon {
   background: teal;
@@ -94,7 +92,12 @@
   text-shadow: 8px 5px 5px rgba(0, 0, 0, 0.671);
 }
 
-.contact_way b:hover {
+.contact_way b a{
+  text-decoration: none;
+  color: #ffffffe1;
+}
+
+.contact_way b a:hover {
   color: rgb(20, 199, 199);
 }
 
@@ -114,10 +117,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 15px 0px;
 }
-.contact_form {
-}
-.form_group {
-}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -131,8 +131,7 @@ input[type="tel"],
   border-radius: 2px;
 }
 
-.contact_form {
-}
+
 
 .form_group {
   margin: 20px 0px 0px 0px;

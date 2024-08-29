@@ -6,18 +6,19 @@ import Skills from "./../../Components/Skills/Skills";
 import Contact from "./../../Components/Contact/Contact";
 import styles from "./Portfolio.module.css";
 import Services from "../../Components/MyServices/Services";
-import { ScrollRestoration } from "react-router-dom";
+// import { ScrollRestoration } from "react-router-dom";
+import PrevLocation from './../../Components/PreviousLocation/PrevLocation';
 
 function Portfolio() {
   return (
     <>
       <div className={styles.portfolio}>
         <section id="navigation_section">
-          <ScrollRestoration />
           <Navigation />
         </section>
 
         <section id="hero_section">
+          <PrevLocation />
           <Hero />
         </section>
 

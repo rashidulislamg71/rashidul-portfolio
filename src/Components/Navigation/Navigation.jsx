@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef, forwardRef, useImperativeHandle } from "react";
 import { Link, scrollSpy } from "react-scroll";
 import styles from "./Navigation.module.css";
-import portfolio_logo from ".//../../../public/Rashidul_logo.png";
+import portfolio_logo from "../../../public/Rashidul_logo.png";
 import { FiX } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -21,7 +21,7 @@ const Navigation = forwardRef((props, ref) => {
   useEffect(() => {
     setIsVisible(true);
     window.addEventListener("scroll", handleScroll);
-    scrollSpy.update();
+    scrollSpy.update(); // Track scroll-nav
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

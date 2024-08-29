@@ -1,13 +1,8 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unescaped-entities */
+
 
 import styles from "./About.module.css";
 import {useRef, useEffect} from "react"
 import about_img_Rashidul_Islam from "../../assets/images/Rashidul islam.jpeg";
-import coding from "../../assets/images/about img/coding.png";
-import programming from "../../assets/images/about img/programming.png";
-import responsive from "../../assets/images/about img/responsive devices.png";
 import HireMe from "../HireMeBtn/HireMe";
 
 const About = () => {

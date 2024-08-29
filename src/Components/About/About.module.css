@@ -14,9 +14,7 @@
     color: #292424;
     padding: 0px 0px;
   }
-  
-  .aboutMe{
-  }
+
   
   .innerContainer {
     padding: 90px 60px;
@@ -42,7 +40,7 @@
     width: 270px;
     border: 1px solid wheat;
     transform: translateX(-130px); 
-    transition: transform 2s ease, opacity 2s ease;
+    transition: transform 3s ease, opacity 3s ease;
     opacity: 0;
   }
   
@@ -68,7 +66,7 @@
     text-align: justify;
     font-size: 16px;
     transform: translateX(140px); 
-    transition: transform 2.3s ease, opacity 2.3s ease;
+    transition: transform 3s ease, opacity 3s ease;
     opacity: 0;
   }
   .content .aboutText p.show {

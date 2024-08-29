@@ -1,12 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable react/jsx-no-target-blank */
-/* eslint-disable no-unused-vars */
+
 
 import styles from "./Hero.module.css";
 import { useState } from "react";
-import hero_img from "../../assets/images/Hero img.png";
-import rashidul from "../../assets/images/Rashidul_islam (2).png";
+// import hero_img from "../../assets/images/Hero img.png";
+// import rashidul from "../../assets/images/Rashidul_islam (2).png";
 import { Link } from "react-scroll";
 
 import { FaSquareGithub } from "react-icons/fa6";

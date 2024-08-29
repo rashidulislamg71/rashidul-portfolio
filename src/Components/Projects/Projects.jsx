@@ -1,6 +1,8 @@
+
+
+
 import styles from "./Projects.module.css";
-import todo_image from "../../assets/images/todo_image.gif";
-import trust_farms from "..//../assets/images/trust-farm.png"
+import trust_farms from "../../assets/images/trust-farm.png"
 
 const Projects = () => {
   return (

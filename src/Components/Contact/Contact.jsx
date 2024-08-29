@@ -1,12 +1,11 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unescaped-entities */
+
+
 import styles from "./Contact.module.css";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { ImFacebook2 } from "react-icons/im";
 import { FaWhatsappSquare } from "react-icons/fa";
-import contact from "../../assets/images/contact/contact_me2.png";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -52,7 +51,7 @@ const Contact = () => {
     const newErrors = {};
 
     if (!validateEmail(formData.email)) {
-      newErrors.email = "একটি বৈধ ইমেইল ঠিকানা প্রবেশ করুন।";
+      newErrors.email = "Encrreact Email Address!";
       hasErrors = true;
     }
 
@@ -69,7 +68,7 @@ const Contact = () => {
         "7xg82TxmrYm_fyH-6"
       )
       .then((response) => {
-        setResponseMessage("ইমেইল সফলভাবে পাঠানো হয়েছে!");
+        setResponseMessage("Email Successfuly Send!");
         setFormData({
           fullName: "",
           phone: "",
@@ -79,7 +78,7 @@ const Contact = () => {
         });
       })
       .catch((error) => {
-        setResponseMessage("ইমেইল পাঠাতে ব্যর্থ হয়েছে।");
+        setResponseMessage("Email Send Error!");
         console.error("Error:", error);
       });
   };
@@ -113,15 +112,45 @@ const Contact = () => {
                   <span>
                     <FaLinkedin />
                   </span>
+                  {/* <span>
+                    <FaXTwitter />
+                  </span> */}
                   <span>
                     <ImFacebook2 />
                   </span>
                 </div>
                 <div className={`${styles.flex} ${styles.contact_way}`}>
-                  <b>01782-242671</b>
-                  <b>GitHub</b>
-                  <b>Linkedin</b>
-                  <b>Facebook</b>
+                  <b>
+                    <a href="tel:+4733378901">+880 1782 242671</a>
+                  </b>
+                  <b>
+                    <a
+                      target="/blank"
+                      href="https://github.com/rashidulislamg71"
+                    >
+                      GitHub
+                    </a>
+                  </b>
+                  <b>
+                    {" "}
+                    <a
+                      target="/blank"
+                      href="https://www.linkedin.com/in/rashidulislam71/"
+                    >
+                      Linkedin
+                    </a>
+                  </b>
+
+                  {/* <b>Twitter</b> */}
+
+                  <b>
+                    <a
+                      target="/blank"
+                      href="https://www.facebook.com/rashidulislam72/"
+                    >
+                      Facebook
+                    </a>
+                  </b>
                 </div>
               </div>
             </div>
