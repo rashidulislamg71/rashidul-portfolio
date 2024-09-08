@@ -8,10 +8,12 @@ import styles from "./Portfolio.module.css";
 import Services from "../../Components/MyServices/Services";
 // import { ScrollRestoration } from "react-router-dom";
 import PrevLocation from './../../Components/PreviousLocation/PrevLocation';
+import { ScrollRestoration } from "react-router-dom";
 
 function Portfolio() {
   return (
     <>
+    <ScrollRestoration />
       <div className={styles.portfolio}>
         <section id="navigation_section">
           <Navigation />

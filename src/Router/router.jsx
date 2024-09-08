@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter} from "react-router-dom";
 import Portfolio from './../Pages/Portfolio/Portfolio';
 import App from './../App';
 import WhyHireMePage from './../Pages/WhyHireMe/WhyHireMePage';
@@ -8,9 +8,9 @@ import HireMePage from "../Pages/HireMePage/HireMePage";
 
 
 const routers = createBrowserRouter([
-    {
-        element: <App />,
-        children:[
+    // {
+    //     // element: <App />,
+        // children:[
             {
                 path: "/",
                 element : <Portfolio />
@@ -19,12 +19,9 @@ const routers = createBrowserRouter([
                 path: "/WhyHireMe",
                 element: <WhyHireMePage />
             },
-            {
-                path: "/contactMe",
-                element: <HireMePage />
-            }
-        ]
-    }
+       
+        // ]
+    // }
 ]);
 
 export default routers;
