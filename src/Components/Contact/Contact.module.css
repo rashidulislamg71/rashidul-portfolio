@@ -4,6 +4,9 @@
 /* "Inter Tight" */
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
+/*  "Tangerine" */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Tangerine:wght@400;700&display=swap');
+
 .contact_section {
   font-family: sans-serif;
   color: white;
@@ -22,19 +25,19 @@
 
 .contact_bg {
   background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(10, 9, 9, 0.5)),
-    url("../../assets/images/contact/ContactMe.png");
+    url("../../assets/images/contact/contact.png");
   background-position: center;
   background-size: cover;
-  padding: 100px 0px;
+  padding: 80px 0px;
 }
 
 .contact_bg h2 {
   text-align: center;
-  margin: -50px 0px 0px;
+  margin: -30px 0px 0px;
 }
 
 .contact_ways {
-  margin: 120px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
   justify-content: space-evenly;
 }
 
@@ -154,6 +157,32 @@ input[type="tel"],
 
 .submit_btn:hover {
   box-shadow: none;
+}
+
+.address_info{
+  background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(10, 9, 9, 0.5)),
+    url("../../assets/images/contact/footer_bottom.png");
+    background-position: center;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: "Tangerine", cursive;
+}
+
+.address_info .location_icon{
+  font-size: 35px;
+  color: rgb(17, 187, 116);
+  border-top: 1px solid rgb(119, 92, 35);
+}
+
+.address_info h4{
+  margin-top: -8px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgb(160, 111, 6);
+  font-size: 30px;
+  line-height: 30px;
+  color: rgb(229, 230, 179);
+  
+
 }
 
 @media screen and (max-width: 834px) {

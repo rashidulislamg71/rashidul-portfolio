@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { ImFacebook2 } from "react-icons/im";
 import { FaWhatsappSquare } from "react-icons/fa";
+import { FaMapLocationDot } from "react-icons/fa6";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -173,7 +174,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className={styles.form_group}>
+                {/* <div className={styles.form_group}>
                   <input
                     type="tel"
                     id="phone"
@@ -183,7 +184,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                   />
-                </div>
+                </div> */}
 
                 <div className={styles.form_group}>
                   <input
@@ -235,8 +236,11 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className={styles.address_info}>
-          Sirajganj Rajshahi, <br /> Dhaka, Bangladesh
+        <div className={`${styles.address_info} `}>
+          <div className={styles.location_icon}>
+            <FaMapLocationDot/>
+          </div>
+          <h4>Sirajganj, Rajshahi, <br /> Dhaka, Bangladesh.</h4>
         </div>
       </div>
     </>

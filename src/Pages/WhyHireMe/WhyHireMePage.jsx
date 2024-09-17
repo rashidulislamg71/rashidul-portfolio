@@ -2,13 +2,13 @@
 
 
 
-import { ScrollRestoration } from "react-router-dom";
+// import { ScrollRestoration } from "react-router-dom";
 import WhyHireMe from "../../Components/WhyHireMe/WhyHireMe";
 
 const WhyHireMePage = () => {
     return (
         <div>
-            <ScrollRestoration />
+            {/* <ScrollRestoration /> */}
             <WhyHireMe />
         </div>
     );

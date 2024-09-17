@@ -11,7 +11,6 @@ import { MdOutlineDevicesOther } from "react-icons/md";
 
 import { SiCodersrank } from "react-icons/si";
 import Modal from "../Modal/Modal";
-import { Link } from "react-router-dom";
 
 const Services = () => {
   const [visible, setVisible] = useState(false);
@@ -188,11 +187,11 @@ const Services = () => {
         </div>
       </ScrollTrigger>
 
-      <div className={styles.whyHireMeBtn}>
-        <Link to="/WhyHireMe">
+      {/* <div className={styles.whyHireMeBtn}>
+        
           Why Hire me?
-        </Link>
-      </div>
+       
+      </div> */}
 
 
       <Modal

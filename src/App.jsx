@@ -1,16 +1,18 @@
 /* eslint-disable no-unused-vars */
 
-
-import { Outlet, ScrollRestoration } from 'react-router-dom';
+import { useEffect } from 'react';
 import Portfolio from './Pages/Portfolio/Portfolio';
-import PrevLocation from './Components/PreviousLocation/PrevLocation';
+
 
 const App = () => {
+  
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  }, []);
+
   return (
     <div>
-      {/* <Portfolio /> */}
-      <ScrollRestoration />
-       <Outlet />
+     <Portfolio />
     </div>
   );
 };
