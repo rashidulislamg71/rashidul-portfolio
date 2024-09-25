@@ -1,207 +1,132 @@
+
+/* font-family Roboto  */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.skills_section {
-  color: rgb(157, 166, 170);
-  background-color: rgba(5, 21, 41, 0.925);
-  padding: 60px 80px;
-  border-top: 2px solid rgba(202, 224, 231, 0.822);
-  font-family: "Saira Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.title {
-  text-align: center;
-  background-color: rgba(5, 5, 5, 0.856);
-  box-shadow: 2px 2px 10px rgba(11, 99, 99, 0.719);
-  font-size: 25px;
-  border-radius: 3px;
-  color: rgb(220, 220, 220);
-  font-family: "Saira Condensed", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.skills_names {
+.flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-}
-/* 
-.inner_content {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-.circular_progress {
+.skills_container {
+  color: #fff;
+  background: rgba(17, 73, 87, 0.918);
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.skills_text {
   position: relative;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.circular_progress::before {
-  content: "";
+.skills_text::before {
+  content: " ";
   position: absolute;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  background: #fafafa;
+  left: -20px;
+  top: -10px;
+  width: 1px;
+  height: 50%;
+  background: #22b1814b;
+}
+.skills_text small {
+  color: #ffffff8c;
+}
+.skills_text h2 {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 2px 0px;
+}
+.skills_text p {
+  max-width: 350px;
+  padding: 10px 0px;
+  color: #ffffffe7;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
-.progress_value {
-  color: green;
+.skills_text img {
+  height: 180px;
+  width: 300px;
+}
+
+.skills_bar_container {
   position: relative;
-  font-size: 30px;
+}
+
+.skills_bar_container .skill_box {
+  width: 350px;
+  margin: 20px 0px 0px 0px;
+}
+
+.skill_box .title {
+  font-size: 16px;
   font-weight: 600;
-  color: #7d2ae8;
-} */
+  color: #fff;
+}
 
-.skill_logo {
+.skill_box .skill_bar {
+  height: 5px;
+  width: 300px;
+  margin-top: 5px;
+  background: linear-gradient(
+    266deg,
+    rgba(4, 149, 104, 1) 22%,
+    rgba(77, 81, 186, 0.639093137254902) 49%,
+    rgba(221, 36, 192, 1) 90%
+  );
+}
+
+.skill_bar .skill_per {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 2px 2px 22px rgba(11, 109, 104, 0.911);
-  padding: 10px;
-  width: 100px;
-}
-
-.skill_logo div {
-  border: 2px solid rgba(116, 194, 190, 0.76);
-  border-radius: 2px;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill_logo div span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: rgb(199, 238, 233);
-  padding: 6px;
-  box-shadow: 2px 2px 5px rgb(11, 109, 104);
-  font-size: 25px;
-}
-
-.skill_logo h5 {
-  color: rgba(235, 235, 235, 0.774);
-  margin-bottom: -10px;
-}
-
-/** Tools css start**/
-
-.tools {
-  margin-top: 40px;
-}
-
-.tools_name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  border-top: 1px solid rgba(209, 226, 209, 0.116);
-
-}
-
-.tools_name div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  /* border: 10px solid rgba(116, 194, 190, 0.76); */
-  border-radius: 3px;
-  box-shadow: 2px 2px 22px rgba(11, 109, 104, 0.911);
-  transition: all 0.5s;
-  position: relative;
-  margin-top: 40px;
-}
-
-.skill_logo::before,
-.skill_logo::after,
-.tools_name div::before,
-.tools_name div::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  border: 2px solid transparent;
-  height: 0%;
-  transition: all 0.5s;
-}
-
-.skill_logo::after,
-.tools_name div::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  border: 2px solid transparent;
-  height: 0%;
-  transition: all 0.5s;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.skill_logo:hover::after,
-.tools_name div:hover::after {
+  display: block;
   height: 100%;
-  background-color: rgba(140, 218, 207, 0.39);
+  width: 90%;
+  background: linear-gradient(
+    266deg,
+    rgba(119, 4, 149, 1) 22%,
+    rgba(186, 168, 77, 0.639093137254902) 49%,
+    rgba(36, 216, 221, 1) 90%
+  );
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
 }
 
-.tools_name div span {
-  border-top: 1px solid rgba(116, 194, 190, 0.76);
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
+.skill_per.html {
+  width: 90%;
+  animation-delay: 0.1s;
 }
 
-.tools_name .vscode{
- 
+.skill_per.css {
+  width: 70%;
+  animation-delay: 0.1s;
 }
 
-.tools_name img {
-  height: 90px;
-  width: 100px;
+.skill_per.tailwind {
+  width: 55%;
+  animation-delay: 0.1s;
 }
 
-/** Tools css end**/
+.skill_per.javascript {
+  width: 60%;
+  animation-delay: 0.2s;
+}
 
-@media screen and (max-width: 1024px) {
-  .skills_section {
-    padding: 30px 15px;
+.skill_per.react {
+  width: 65%;
+  animation-delay: 0.3s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
   }
-
-  .skills_names {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-
-  .tools {
-    margin-top: 25px;
-  }
-
-  .tools_name {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-  }
-
-  .tools_name div {
-    margin-top: 25px;
+  100% {
+    opacity: 1;
   }
 }

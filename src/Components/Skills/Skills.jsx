@@ -1,79 +1,61 @@
 
 
-import styles from "./Skills.module.css";
-import figma from "../../assets/images/figma.png";
-import git from "../../assets/images/git.png";
-import firebase from "../../assets/images/firebase.png";
-import vscode from "../../assets/images/vscode.png"
 
-//*Skills Logo */
-import { PiFileHtmlBold } from "react-icons/pi";
-import { PiFileCssBold } from "react-icons/pi";
-import { SiTailwindcss } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
-import { TbBrandReactNative } from "react-icons/tb";
+import styles from "./Skills.module.css";
+import skills_img from "../../assets/images/skills_img/skills.png"
 
 const Skills = () => {
   return (
-    <div className={styles.skills_section}>
-      <h3 className={styles.title}>Skills And Tools</h3>
-      <div className={styles.skills_names}>
-        <div className={`${styles.skill_logo} ${styles.html_logo}`}>
-          <div>
-            <span>
-              <PiFileHtmlBold />
-            </span>
+    <div id={styles.skills_sectiion}>
+      <div className={styles.skills_container}>
+        <div className={`${styles.skills_inner_content} ${styles.flex}`}>
+          <div className={styles.skills_text}>
+            <small>Explore My</small>
+            <h2>SKILLS</h2>
+            <p>
+            I specialize in HTML, CSS, Tailwind CSS, JavaScript, and React.js, while continuously learning new technologies to stay updated and deliver innovative, modern web solutions.
+            </p>
+            <img src={skills_img} alt="Skills" />
           </div>
-          <h5>HTML</h5>
-        </div>
-        <div className={`${styles.skill_logo} ${styles.css_logo}`}>
-          <div>
-            <span>
-              <PiFileCssBold />
-            </span>
-          </div>{" "}
-          <h5>CSS</h5>
-        </div>
-        <div className={`${styles.skill_logo} ${styles.tailwind_logo}`}>
-          <div>
-            <span>
-              <SiTailwindcss />{" "}
-            </span>
-          </div>
-          <h5>TailwindCSS</h5>
-        </div>
-        <div className={`${styles.skill_logo} ${styles.javaScript_logo}`}>
-          <div>
-            <span>
-              <IoLogoJavascript />
-            </span>
-          </div>
-          <h5>JavaScript</h5>
-        </div>
-        <div className={`${styles.skill_logo} ${styles.react_logo}`}>
-          <div>
-            <span>
-              <TbBrandReactNative />
-            </span>
-          </div>
-          <h5>React.js</h5>
-        </div>
-      </div>
+          <div className={styles.skills_bar_container}>
+            <div className={styles.skill_box}>
+              <span className={styles.title}>HTML</span>
+              <div className={styles.skill_bar}>
+                <span className={`${styles.skill_per} ${styles.html}`}></span>
+              </div>
+            </div>
 
-      <div className={styles.tools}>
-        <div className={styles.tools_name}>
-          <div>
-            <img className={styles.vscode} src={vscode} alt="Figma" /> <span>VS Code</span>
-          </div>
-          <div>
-            <img src={figma} alt="Figma" /> <span>Figma</span>
-          </div>
+            <div className={styles.skill_box}>
+              <span className={styles.title}>CSS</span>
+              <div className={styles.skill_bar}>
+                <span className={`${styles.skill_per} ${styles.css}`}></span>
+              </div>
+            </div>
 
-          <div>
-            <img src={git} alt="Git" /> <span>Git&GitHub</span>
-          </div>
-          <div>
-            <img src={firebase} alt="Firebase" /> <span>Firebase</span>
+            <div className={styles.skill_box}>
+              <span className={styles.title}>Tailwind CSS</span>
+              <div className={styles.skill_bar}>
+                <span
+                  className={`${styles.skill_per} ${styles.tailwind}`}
+                ></span>
+              </div>
+            </div>
+
+            <div className={styles.skill_box}>
+              <span className={styles.title}>JavaScript</span>
+              <div className={styles.skill_bar}>
+                <span
+                  className={`${styles.skill_per} ${styles.javascript}`}
+                ></span>
+              </div>
+            </div>
+
+            <div className={styles.skill_box}>
+              <span className={styles.title}>React.js</span>
+              <div className={styles.skill_bar}>
+                <span className={`${styles.skill_per} ${styles.react}`}></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

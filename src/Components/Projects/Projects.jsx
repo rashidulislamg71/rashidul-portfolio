@@ -1,136 +1,73 @@
-
-
-
 import styles from "./Projects.module.css";
-import trust_farms from "../../assets/images/trust-farm.png"
+import trust_farms from "../../assets/images/trust-farm.png";
+import { IoArrowForwardSharp } from "react-icons/io5";
+import { IoMdArrowDropup } from "react-icons/io";
 
 const Projects = () => {
   return (
     <section className={styles.projects_section}>
       <h3 className={styles.title}>My Projects</h3>
-      <div className={styles.projects_content}>
-        <div className={styles.my_projects}>
-          <div className={`${styles.todo_app} ${styles.projects_app}`}>
-            <div className={styles.app_box}>
-              <div className={styles.todo_image}>
-                <img src={trust_farms} alt="" />
-                <b>Trust-farms (E-commerce)</b>
+      <div className={styles.project_category}>
+        <ul className={styles.flex}>
+          <li>
+            <a href="">
+              E-commerce
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Sites 
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Landing Page 
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Email Template 
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className={styles.projects_container}>
+        <div className={`${styles.projects_content} ${styles.flex}`}>
+          <div className={styles.single_project}>
+            <div className={styles.project_detailes}>
+              <div className={styles.project_img}>
+                <img src={trust_farms} alt="Project_img" />
               </div>
-              <div className={styles.app_features}>
-                <h4>App Features:</h4>
-                <div className={styles.features_list}>
-                  <div>
-                    <li>User authentication (sign up and login)</li>
-                    <li>Add To Cart and Delete</li>
-                  </div>
-                  <div>
-                    <li>Search</li>
-                    <li>Responsive design</li>
-                  </div>
+              <div className={styles.project_text}>
+                <h3>Trust Farms (E-commerce)</h3>
+                <div className={`${styles.project_links} ${styles.flex}`}>
+                  <a href="" target="_blank">
+                    Live Preview
+                  </a>
+                  <a href="" target="_blank">
+                    GitHub Link
+                  </a>
                 </div>
-              </div>
-              <div className={styles.live_and_github_link}>
-                <a
-                  href="https://trust-farms.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live Link
-                </a>
-                <a
-                  href="https://github.com/rashidulislamg71/trust-farms"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub Link
-                </a>
-              </div>
-              <div className={styles.project_details_btn}>
-                <a href=""></a>
-                {/* <button>Read Project Details</button> */}
+                <div className={`${styles.flex} ${styles.project_details_btn}`}>
+
+                <button>More Project Details</button>
+                <span><IoArrowForwardSharp /></span>
+                </div>
               </div>
             </div>
           </div>
-          {/* <div className={`${styles.todo_app} ${styles.projects_app}`}>
-            <div className={styles.app_box}>
-              <div className={styles.todo_image}>
-                <img src={todo_image} alt="" />
-                <b>ToDo App</b>
-              </div>
-              <div className={styles.app_features}>
-                <h4>App Features:</h4>
-                <div className={styles.features_list}>
-                  <div>
-                    <li>Add daily Tasks</li>
-                    <li>Edit Task</li>
-                  </div>
-                  <div>
-                    <li>Delete Task</li>
-                    <li>Saved tasks at local storage</li>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.live_and_github_link}>
-                <a
-                  href="https://tasks-list-three.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live Link
-                </a>
-                <a
-                  href="https://github.com/rashidulislamg71/tasks-list"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub Link
-                </a>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <div className={`${styles.todo_app} ${styles.projects_app}`}>
-            <div className={styles.app_box}>
-              <div className={styles.todo_image}>
-                <img src={todo_image} alt="" />
-                <b>ToDo App</b>
-              </div>
-              <div className={styles.app_features}>
-                <h4>App Features:</h4>
-                <div className={styles.features_list}>
-                  <div>
-                    <li>Add daily Tasks</li>
-                    <li>Edit Task</li>
-                  </div>
-                  <div>
-                    <li>Delete Task</li>
-                    <li>Saved tasks at local storage</li>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.live_and_github_link}>
-                <a
-                  href="https://tasks-list-three.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live Link
-                </a>
-                <a
-                  href="https://github.com/rashidulislamg71/tasks-list"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub Link
-                </a>
-              </div>
-              <div></div>
-            </div>
-          </div> */}
         </div>
       </div>
 
-      <div className={styles.tools}></div>
+      <div className={styles.see_more_projects}>
+        <button>
+          View More Projects {" "}
+        </button>
+          <span>
+            {" "}
+            <IoArrowForwardSharp />
+          </span>
+      </div>
     </section>
   );
 };
