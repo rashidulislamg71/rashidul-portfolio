@@ -160,9 +160,7 @@ input[type="tel"],
 }
 
 .address_info{
-  background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(10, 9, 9, 0.5)),
-    url("../../assets/images/contact/footer_bottom.png");
-    background-position: center;
+  background:  linear-gradient(305deg, rgba(20,170,123,0.8463760504201681) 22%, rgba(77,81,186,1) 55%, rgba(9,154,145,1) 87%);
     padding: 10px 0px;
     text-align: center;
     font-family: "Tangerine", cursive;
@@ -171,13 +169,13 @@ input[type="tel"],
 .address_info .location_icon{
   font-size: 35px;
   color: rgb(17, 187, 116);
-  border-top: 1px solid rgb(119, 92, 35);
+  border-top: 1px solid rgba(219, 214, 205, 0.233);
 }
 
 .address_info h4{
   margin-top: -8px;
   letter-spacing: 1px;
-  border-bottom: 1px solid rgb(160, 111, 6);
+  border-bottom: 1px solid rgba(219, 214, 205, 0.233);
   font-size: 30px;
   line-height: 30px;
   color: rgb(241, 241, 240);
