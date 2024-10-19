@@ -94,7 +94,7 @@ const Hero = () => {
             }`}
           >
             <a
-              href="https://drive.google.com/file/d/1N2q28n1klhV8A1dJkLw9gsWUqf251wP9/view?usp=sharing"
+              href="https://drive.google.com/file/d/1UACnmyxvbQqv_wb1GeVEyahjmi1Erscp/view?usp=drive_link"
               target="_blank"
             >
               <button>Download Resume</button>

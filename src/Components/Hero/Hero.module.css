@@ -234,3 +234,9 @@
     width: auto;
   }
 }
+
+@media screen and (max-width:480px) {
+  .addressing .stars_animation{
+    display: none;
+  }
+}
