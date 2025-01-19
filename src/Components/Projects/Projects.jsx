@@ -1,5 +1,6 @@
 import styles from "./Projects.module.css";
 import trust_farms from "../../assets/images/Project_img/trust-farm.png";
+import nexcent from "../../assets/images/Project_img/nexcent.png";
 import cryptop_img from "../../assets/images/Project_img/Cryptop.png";
 import { IoArrowForwardSharp } from "react-icons/io5";
 import { IoMdArrowDropup } from "react-icons/io";
@@ -33,6 +34,32 @@ const Projects = () => {
               </div>
             </div>
           </div>
+
+
+          <div className={styles.single_project}>
+            <div className={styles.project_detailes}>
+              <div className={styles.project_img}>
+                <img src={nexcent} alt="Project_img" />
+              </div>
+              <div className={styles.project_text}>
+                <h3> Nexcent (Template with Animation)</h3>
+                <div className={`${styles.project_links} ${styles.flex}`}>
+                  <a href="https://nexcent-roan.vercel.app/" target="_blank">
+                    Live Preview
+                  </a>
+                  <a href="https://github.com/rashidulislamg71/nexcent" target="_blank">
+                    GitHub Link
+                  </a>
+                </div>
+                <div className={`${styles.flex} ${styles.project_details_btn}`}>
+
+                <button>More Project Details</button>
+                <span><IoArrowForwardSharp /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className={styles.single_project}>
             <div className={styles.project_detailes}>
               <div className={styles.project_img}>
